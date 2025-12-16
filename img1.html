@@ -1,17 +1,31 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Image 1</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Galerie d'images - Image 1">
+  <title>Image 1 - SlowSite</title>
   <link rel="stylesheet" href="css/styles.css">
-  <script src="js/script.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <script src="js/script.js" defer></script>
 </head>
 <body>
-  <div class="topbar"><div class="container nav"><div class="logo">Slow<span>Site</span></div><div class="menu"><a href="index.html">← Retour à l'accueil</a></div></div></div>
-  <div class="section image-page"><div class="container">
-    <h1>Image 1</h1>
-    <div class="image-wrapper"><img src="img/img1.jpg" alt="Image 1"></div>
-  </div></div>
+  <header class="topbar">
+    <div class="container nav">
+      <div class="logo">Slow<span>Site</span></div>
+      <nav class="menu">
+        <a href="index.html" aria-label="Retour à l'accueil">← Retour à l'accueil</a>
+      </nav>
+    </div>
+  </header>
+  
+  <main class="section image-page">
+    <div class="container">
+      <h1>Image 1</h1>
+      <div class="image-wrapper">
+        <img src="img/img1.jpg" alt="Image 1" loading="lazy" width="800" height="600">
+      </div>
+    </div>
+  </main>
 </body>
 </html>
